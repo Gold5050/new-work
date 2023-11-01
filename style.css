@@ -261,7 +261,7 @@ button.contact-btn{
     bottom: 0px;
 }
 
-.hero .career-container{
+.home .career-container{
     position: relative;
     width: 100%;
     height: auto;
@@ -315,4 +315,121 @@ button.contact-btn{
     font-size: 15px;
     color: var(--links-clr);
 }
+
+
+
+.about{
+    padding: 90px 8% 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .about-image{
+    position: relative;
+    flex-basis: 30%;
+    height: 400px;
+    max-height: 450px;
+    background-color: var(--primary-light-clr);
+}
+
+.about .about-desc{
+    flex-basis: 65%;
+    margin-left: 3%;
+}
+
+.about .about-image::before{
+    position: absolute;
+    content: '';
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    outline: 3px solid var(--primary-clr);
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+}
+
+.about .about-image img{
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.about .about-image .social-media{
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 10px);
+    z-index: 3;
+    background-color: var(--primary-clr);
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.about .about-image .social-media i{
+    color: var(--bg-clr-one);
+    margin: 8px 0px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.about .about-image .social-media i:hover{
+    transform: scale(2.1);
+}
+
+.about .about-desc h3{
+    font-size: 20px;
+    color: var(--links-clr);
+}
+
+.about .about-desc h2{
+    margin: 10px 0px;
+    font-size: 22px;
+    color: var(--primary-clr);
+}
+
+.about .about-desc p{
+    font-size: 15px;
+    color: var(--text-clr);
+}
+
+.about-desc .about-personal-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--primary-clr);
+}
+
+.about-personal-info div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-personal-info div span{
+    color: var(--text-clr);
+    letter-spacing: 1px;
+}
+
+.about-desc .download-btn{
+    margin-top: 100px;
+    border-radius: 25px;
+    margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
